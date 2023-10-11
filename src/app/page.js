@@ -37,6 +37,14 @@ export default function Home() {
           height={37}
           priority
         />
+        <Image
+            className={styles.logo}
+            src="/IMG_9208-1696674636609.webp"
+            alt="Next.js Logo"
+            width={300}
+            height={300}
+            priority
+        />
       </div>
 
       <div className={styles.grid}>

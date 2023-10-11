@@ -3,16 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_ENV=development node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
     "lint": "next lint"
   },
   "dependencies": {
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.4",
+    "http": "^0.0.1-security",
     "next": "13.5.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "url": "^0.11.3"
   }
 }
